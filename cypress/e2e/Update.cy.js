@@ -25,6 +25,9 @@ describe('Update To Do App', () => {
     });
 
     it('Modifier un todo cas passant', () => {
-        update.updateTask(token, id);
-    });
-});
+        update.updateTask(token, id)
+        .then((response)=> {
+            expect(response.status).to.eq(200);
+    })
+})
+})
